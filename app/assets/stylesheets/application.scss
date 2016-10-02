@@ -10,6 +10,20 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
  */
+@import "bootstrap";
+
+#message {
+  font: 16px;
+  width: 500px;
+  height: 400px;
+  overflow: auto;
+  margin: 0 auto;
+  background-color: #ececec;
+  word-break: break-all;
+}
+#submit_chat {
+  overflow: auto;
+	padding-left: 10%;
+}

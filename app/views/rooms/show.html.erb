@@ -1,10 +1,13 @@
 <h1>Chat room</h1>
 <div id= "message">
-  <%= render @messages %>
+  <%= render @messages.order(created_at: :desc) %>
 </div>
 
+<div id="submit_chat">
 <form>
 	<label> Say something</label>
 	<input type="text" name="content" data-behavior="room_speaker">
 </form>
+</div>
+
 
