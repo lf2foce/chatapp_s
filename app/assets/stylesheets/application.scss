@@ -17,7 +17,7 @@
 #message {
   font: 16px;
   width: 500px;
-  height: 300px;
+  height: 500px;
   overflow: scroll;
   margin: 0 auto;
   background-color: #ececec;
@@ -27,3 +27,10 @@
   overflow: auto;
 	padding-left: 10%;
 }
+
+@media only screen and (max-width: 480px) {
+    #message {
+        height: 300px;
+        overflow-y: scroll;
+        }
+    }
