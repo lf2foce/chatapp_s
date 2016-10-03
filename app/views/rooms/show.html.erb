@@ -1,7 +1,11 @@
-<h1>Chat room</h1>
+
+
+<div class="mu"><h1>Chat room</h1></div>
 <div id= "message">
-  <%= render @messages.order(created_at: :desc) %>
+  <%= render @messages.order(created_at: :asc) %>
 </div>
+<div class="duoi"></div>
+
 
 <div id="submit_chat">
 <form>
@@ -9,5 +13,6 @@
 	<input type="text" name="content" data-behavior="room_speaker">
 </form>
 </div>
+
 
 

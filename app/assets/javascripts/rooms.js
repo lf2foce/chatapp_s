@@ -9,4 +9,4 @@
 #  $('#message').animate({
 #  scrollTop: $('#message').get(0).scrollHeight}, 2000);
 #});
-#
+

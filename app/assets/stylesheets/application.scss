@@ -14,23 +14,89 @@
  */
 @import "bootstrap";
 
+body {
+  background-color: #DAE9E4;
+  font-family: 'Helvetica', sans-serif;
+}
+.nav_top {
+	padding: 40px;
+	background-color: #3C2E3D;
+	
+}
+
 #message {
   font: 16px;
   width: 500px;
   height: 500px;
-  overflow: scroll;
+  overflow-y: auto;
   margin: 0 auto;
-  background-color: #ececec;
+  background-color: transparent;
   word-break: break-all;
 }
 #submit_chat {
   overflow: auto;
 	padding-left: 10%;
 }
+.mu {
+	padding: 5px;
+	width: 500px;
+	background-color: #8BCBC8;
+	margin: 0 auto;
+	border-radius: 25px 25px 0px 5px;
+}
+.all_messages {
+	width: 500px;
+  height: 360px;
+  overflow-y:scroll;
+  margin: 0 auto;
+background-color: transparent;
+}
+.each_message {
+  width: 480px;
+  word-break:break-all;
+  background-color: #fff;
+  color: #3C2E3D;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 5px 5px 5px 5px;
+  padding-left: 20px;
+}
+p.time {
+  color: #FDAE84;
+  font-size: 10px;
+  margin-bottom: 2px;
+  margin-left: 300px;
+
+}
+.duoi {
+	padding: 30px;
+	width: 500px;
+	background-color: #8BCBC8;
+	margin: 0 auto;
+	border-radius: 0px 0px 25px 25px;
+	margin-bottom: 15px;
+}
+
 
 @media only screen and (max-width: 480px) {
-    #message {
-        height: 300px;
-        overflow-y: scroll;
+    
+    #message, .duoi, .mu {
+    	width: 100%;
+        
         }
+    #message {
+    	height: 300px;
+    	overflow-y: scroll;
+
+    }    
+    .each_message {
+    	width: 100%;
+    	padding-left: 20px;
+    	margin-bottom: 2px;
     }
+    p.time {
+    	display: none;
+    }
+}
+
