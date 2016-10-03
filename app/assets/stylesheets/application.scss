@@ -28,31 +28,37 @@ body {
   font: 16px;
   width: 500px;
   height: 500px;
-  overflow-y: auto;
+  overflow-y: hidden;
   margin: 0 auto;
   background-color: transparent;
   word-break: break-all;
+}
+#message:hover {
+	overflow: auto;
 }
 #submit_chat {
   overflow: auto;
 	padding-left: 10%;
 }
 .mu {
-	padding: 5px;
+	padding: 3px;
 	width: 500px;
 	background-color: #8BCBC8;
 	margin: 0 auto;
 	border-radius: 25px 25px 0px 5px;
 }
-.all_messages {
+div.all_messages {
 	width: 500px;
   height: 360px;
-  overflow-y:scroll;
+  overflow-y:scroll ;
   margin: 0 auto;
 background-color: transparent;
 }
+//div.all_messages:hover {
+//	overflow: auto;
+//}
 .each_message {
-  width: 480px;
+  width: 500px;
   word-break:break-all;
   background-color: #fff;
   color: #3C2E3D;
@@ -70,7 +76,7 @@ p.time {
 
 }
 .duoi {
-	padding: 30px;
+	padding: 10px;
 	width: 500px;
 	background-color: #8BCBC8;
 	margin: 0 auto;
@@ -86,7 +92,7 @@ p.time {
         
         }
     #message {
-    	height: 300px;
+    	height: 400px;
     	overflow-y: scroll;
 
     }    
@@ -100,3 +106,51 @@ p.time {
     }
 }
 
+
+//#message::-webkit-scrollbar {
+//    width: 1em;
+//}
+// 
+//#message::-webkit-scrollbar-track {
+//    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+//}
+// 
+//#message::-webkit-scrollbar-thumb {
+//  background-color: #ECC7C0;
+//  outline: 1px solid #3C2E3D;
+//}
+
+
+#message::-webkit-scrollbar {
+    min-width: 12px;
+    width: 12px;
+    max-width: 12px;
+    min-height: 12px;
+    height: 12px;
+    max-height: 12px;
+    background: #fff; //#DAE9E4
+    //box-shadow: inset 0px 50px 0px rgba(82,179,217,0.9), inset 0px -52px 0px #ECC7C0;   --tao gờ
+}
+
+#message::-webkit-scrollbar-thumb {
+    background: #4F324E;
+    border: none;
+    border-radius: 10px;
+    border: solid 2px #8BCBC8;
+    box-shadow: inset 0px 0px 3px #fff;
+}
+
+#message::-webkit-scrollbar-thumb:hover {
+    background: #DAE9E4;
+  //box-shadow: inset 0px 0px 3px #888;
+}
+
+//#message::-webkit-scrollbar-thumb:active {
+//    background: #aaa;
+//  box-shadow: inset 0px 0px 3px #7f7f7f;
+//}
+//
+//#message::-webkit-scrollbar-button {
+//    display: block;
+//    height: 26px;
+//}
